@@ -19,7 +19,7 @@ st.set_page_config(
 try:
     SPIN_PASSWORD = st.secrets["SPIN_PASSWORD"]   # only works if a secrets.toml exists
 except Exception:
-    SPIN_PASSWORD = "BSDK"                        # fallback when no secrets file is set up
+    SPIN_PASSWORD = "nothing"                        # fallback when no secrets file is set up
 
 REQUIRED_COLS = ["Name", "Department", "Email", "Selected"]
 DB_PATH = "people.xlsx"
